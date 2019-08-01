@@ -1,0 +1,67 @@
+heading_title = Server Information
+module_si_title = Server Information
+module_si_short_title = Server Information
+
+text_server_info = Server Information
+tab_info_php = Php information
+tab_info_server = Information server
+
+text_configure =  configure App Module
+
+text_intro = This app allow you to include an server Information form. <br /><br />
+- Click on Configure to access / install or uninstall the app.<br />
+- The App is located in Tools<br />
+
+module_si_introduction = The install process create the database settings for this module and the access menu
+
+button_back = Back
+button_install_title = Install
+button_configure = Configure
+button_save = Save
+button_dialog_uninstall =  Uninstall
+button_uninstall =  Uninstall
+button_delete = Delete
+button_cancel = Cancel
+button_server_info = Server Information
+button_reset = Reset
+button_analyse = Analyse
+button_update = Update
+
+dialog_uninstall_title = Uninstall
+dialog_uninstall_body = Do you want install this App ?
+dialog_uninstall_title = Uninstall Module?
+dialog_uninstall_body = Are you sure you want to uninstall this module?
+
+alert_module_install_success = Module has been successfully installed.
+alert_module_uninstall_success = Module has been successfully uninstalled.
+alert_cfg_saved_success = Configuration parameters have been successfully saved.
+
+server_info_php = Server info
+title_server_host = Server Host:
+title_server_os = Server OS:
+title_server_date = Server Date:
+title_server_up_time = Server Up Time:
+title_http_server = HTTP Server:
+title_php_version = PHP Version:
+title_zend_version = Zend:
+title_database_host = Database Host:
+title_database = Database:
+title_database_date = Database Date:
+
+title_clicshopping_version =  Version ClicShopping
+
+tab_info_op_cache = Info OpCache
+server_info_opcache = OpCache
+test_opcache_dashoard = OpCache Dashboard
+text_hits = Hits
+text_memory = Memory
+text_keys = Keys
+text_status = Status
+text_configuration = Configuration
+text_script = Scripts
+text_invalidate = Invalidate
+text_options = Options
+text_path = Path
+text_reset_all = Reset All
+
+

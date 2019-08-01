@@ -1,0 +1,6 @@
+cfg_server_info_status_title = Status
+cfg_server_info_status_description = Set True to enable or not the module
+
+cfg_server_info_status_true = True
+cfg_server_info_status_false = False
+
