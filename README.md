@@ -7,12 +7,9 @@ You can create you own export easily and adapt in function your needs via a new 
 
 Important Note :
 licence  : GPL 2 - MIT
-Language : French - English
 
 Install :
-
 Copy all Directories inside Shop except ModulesInfosJson
-
 Copy the apps_tools_server_info.json into ClicShopping/Work/Cache/Github
 
 https://monsite/myAdmin/index.php?A&Tools\ServerInfo
