@@ -4,7 +4,7 @@ module_si_short_title =  Information serveur
 
 text_server_info = Information serveur
 tab_info_php = Information PHP
-server_info = Information général sur le serveur
+tab_info_server = Information serveur
 
 text_configure =  Configurer App Module
 

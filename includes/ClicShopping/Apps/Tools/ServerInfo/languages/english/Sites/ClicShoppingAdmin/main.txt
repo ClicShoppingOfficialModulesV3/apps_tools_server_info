@@ -4,7 +4,7 @@ module_si_short_title = Server Information
 
 text_server_info = Server Information
 tab_info_php = Php information
-tab_info_server = Information server
+tab_info_server = Server Information
 
 text_configure =  configure App Module
 
