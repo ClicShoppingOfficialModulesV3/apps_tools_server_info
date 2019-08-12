@@ -53,7 +53,7 @@ title_clicshopping_version = ClicShopping Version
 
 tab_info_op_cache = OpCache information
 server_info_opcache = OpCache
-test_opcache_dashoard = tableau de bord OpCache
+test_opcache_dashoard = Tableau de bord OpCache
 text_hits = Hits
 text_memory = Memoire
 text_keys = Keys
