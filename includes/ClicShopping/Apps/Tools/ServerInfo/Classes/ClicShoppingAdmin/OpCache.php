@@ -110,7 +110,7 @@
     }
 
     public function is_action($action) {
-      return isset( $_GET['action'] ) && $_GET['action'] == $action;
+      return isset( $_GET['action']) && $_GET['action'] == $action;
     }
 
     public function percentage( $a, $b ) {
