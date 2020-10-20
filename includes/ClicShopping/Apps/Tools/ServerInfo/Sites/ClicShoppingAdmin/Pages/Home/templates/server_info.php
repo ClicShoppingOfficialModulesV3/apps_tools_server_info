@@ -101,9 +101,6 @@
                                   <strong><?php echo $CLICSHOPPING_ServerInfo->getDef('title_server_date'); ?></strong>
                                 </td>
                                 <td><?php echo $info['system']['date']; ?></td>
-                                <td>
-                                  <strong><?php echo $CLICSHOPPING_ServerInfo->getDef('title_database_date'); ?></strong>
-                                </td>
                                 <td><?php echo $info['mysql']['date']; ?></td>
                               </tr>
                               <tr>

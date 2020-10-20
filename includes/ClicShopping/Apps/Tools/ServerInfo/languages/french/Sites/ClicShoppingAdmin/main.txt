@@ -46,8 +46,8 @@ title_zend_version = Zend :
 title_database_host = H&ocirc;te de la base de données :
 title_database = Base de données :
 title_database_name = Nom de la base de données:
-title_php_version = Zend verion
-title_database_date Date Dase de données
+title_php_version = Zend version
+title_database_date = Date Dase de données
 
 title_clicshopping_version = ClicShopping Version
 
