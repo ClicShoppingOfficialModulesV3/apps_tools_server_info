@@ -13,8 +13,6 @@
 
   class OpCache
   {
-
-
     /**
      * Turn bytes into a human readable format
      * @param $bytes

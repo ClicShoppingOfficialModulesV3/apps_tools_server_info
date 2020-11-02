@@ -21,8 +21,8 @@
 
   $CLICSHOPPING_ServerInfo_Config = Registry::get('ServerInfoAdminConfig' . $current_module);
 
-  if ($CLICSHOPPING_MessageStack->exists('ServerInfo')) {
-    echo $CLICSHOPPING_MessageStack->get('ServerInfo');
+  if ($CLICSHOPPING_MessageStack->exists('main')) {
+    echo $CLICSHOPPING_MessageStack->get('main');
   }
 ?>
 

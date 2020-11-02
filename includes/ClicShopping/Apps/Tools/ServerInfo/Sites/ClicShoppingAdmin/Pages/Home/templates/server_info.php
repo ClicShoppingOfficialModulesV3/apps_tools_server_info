@@ -17,8 +17,8 @@
 
   $CLICSHOPPING_ServerInfo = Registry::get('ServerInfo');
   $CLICSHOPPING_Template = Registry::get('TemplateAdmin');
+  $CLICSHOPPING_Language = Registry::get('Language');
 
-  $CLICSHOPPING_Language->loadDefinitions('server_info');
   $info = CLICSHOPPING::getSystemInformation();
   $server = parse_url(CLICSHOPPING::getConfig('http_server'));
 
