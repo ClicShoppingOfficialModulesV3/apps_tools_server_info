@@ -258,7 +258,7 @@
                               </button>
                               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
-                                  <a class="nav-item nav-link active" href="index.php?A&Tools\ServerInfo&ServerInfo#hits"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_hits'); ?> <span class="sr-only">(current)</span></a>
+                                  <a class="nav-item nav-link active" href="index.php?A&Tools\ServerInfo&ServerInfo#hits"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_hits'); ?> <span class="visually-hidden">(current)</span></a>
                                   <a class="nav-item nav-link" href="index.php?A&Tools\ServerInfo&ServerInfo#memory"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_memory'); ?></a>
                                   <a class="nav-item nav-link" href="index.php?A&Tools\ServerInfo&ServerInfo#keys"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_keys'); ?></a>
                                   <a class="nav-item nav-link" href="index.php?A&Tools\ServerInfo&ServerInfo#status"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_status'); ?></a>
@@ -281,10 +281,10 @@
                               <h5 id="hits"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_hits'); ?> <?php echo $hitRate; ?>%</h5>
                               <div class="progress progress-striped">
                                 <div class="progress-bar progress-bar-success" style="width: <?php echo $hitRate; ?>%">
-                                  <span class="sr-only">Hits</span>
+                                  <span class="visually-hidden">Hits</span>
                                 </div>
                                 <div class="progress-bar progress-bar-danger" style="width: <?php echo (100 - $hitRate); ?>%">
-                                  <span class="sr-only">Misses</span>
+                                  <span class="visually-hidden">Misses</span>
                                 </div>
                               </div>
 <?php
@@ -296,13 +296,13 @@
                               <h5 id="memory"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_memory'); ?>  <?php echo $opCache->size_for_humans($wastedMemory + $usedMemory); ?> of <?php echo $opCache->size_for_humans($totalMemory); ?></h5>
                               <div class="progress progress-striped">
                                 <div class="progress-bar progress-bar-danger" style="width: <?php echo round(($wastedMemory / $totalMemory) * 100, 0); ?>%">
-                                  <span class="sr-only">Wasted memory</span>
+                                  <span class="visually-hidden">Wasted memory</span>
                                 </div>
                                 <div class="progress-bar progress-bar-warning" style="width: <?php echo round(($usedMemory / $totalMemory) * 100, 0); ?>%">
-                                  <span class="sr-only">Used memory</span>
+                                  <span class="visually-hidden">Used memory</span>
                                 </div>
                                 <div class="progress-bar progress-bar-success" style="width: <?php echo round(($freeMemory / $totalMemory) * 100, 0); ?>%">
-                                  <span class="sr-only">Free memory</span>
+                                  <span class="visually-hidden">Free memory</span>
                                 </div>
                               </div>
 <?php
@@ -314,10 +314,10 @@
                               <h5 id="keys"><?php echo $CLICSHOPPING_ServerInfo->getDef('text_keys'); ?> <?php echo $usedKeys; ?> of <?php echo $totalKeys; ?></h5>
                               <div class="progress progress-striped">
                                 <div class="progress-bar progress-bar-warning" style="width: <?php echo round(($usedKeys / $totalKeys) * 100, 0); ?>%">
-                                  <span class="sr-only">Used keys</span>
+                                  <span class="visually-hidden">Used keys</span>
                                 </div>
                                 <div class="progress-bar progress-bar-success" style="width: <?php echo round(($freeKeys / $totalKeys) * 100, 0); ?>%">
-                                  <span class="sr-only">Free keys</span>
+                                  <span class="visually-hidden">Free keys</span>
                                 </div>
                               </div>
 <?php
@@ -335,7 +335,7 @@
           continue;
         }
 
-        if (is_array($value)) {
+        if (\is_array($value)) {
           foreach ($value as $k => $v) {
             $v = $opCache->getStringFromPropertyAndValue($k, $v);
             $m = $opCache->getSuggestionMessage($k, $v);

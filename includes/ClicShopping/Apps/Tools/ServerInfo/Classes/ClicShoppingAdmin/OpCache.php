@@ -152,7 +152,7 @@
       if( $key == 'hash' )
         $key = 'hash_bytes';
 
-      if (!is_array($memcache_stats))
+      if (!\is_array($memcache_stats))
         return 0;
 
       $result = 0;
@@ -174,7 +174,7 @@
 
       if ($memcacheVersion == 'memcache') {
         $val = $memcache->get(array($key));
-        $found = count($val) > 0;
+        $found = \count($val) > 0;
         return $found ? array_pop($val) : false;
       }
 
@@ -194,7 +194,7 @@
         return array();
       $items = $memcache->getAllKeys();
 
-      if (!is_array($items))
+      if (!\is_array($items))
         return array();
       $keys = array();
 
