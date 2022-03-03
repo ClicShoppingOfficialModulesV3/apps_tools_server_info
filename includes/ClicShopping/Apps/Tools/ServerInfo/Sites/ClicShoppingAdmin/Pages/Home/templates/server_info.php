@@ -44,11 +44,11 @@
         <div style="padding-left: 10px" ;>
           <ul class="nav nav-tabs flex-column flex-sm-row" role="tablist" id="myTab">
             <li
-              class="nav-item"><?php echo '<a href="#tab1" role="tab" data-toggle="tab" class="nav-link active">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_server') . '</a>'; ?></li>
+              class="nav-item"><?php echo '<a href="#tab1" role="tab" data-bs-toggle="tab" class="nav-link active">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_server') . '</a>'; ?></li>
             <li
-              class="nav-item"><?php echo '<a href="#tab2" role="tab" data-toggle="tab" class="nav-link">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_php'); ?></a></li>
+              class="nav-item"><?php echo '<a href="#tab2" role="tab" data-bs-toggle="tab" class="nav-link">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_php'); ?></a></li>
             <li
-              class="nav-item"><?php echo '<a href="#tab3" role="tab" data-toggle="tab" class="nav-link">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_op_cache'); ?></a></li>
+              class="nav-item"><?php echo '<a href="#tab3" role="tab" data-bs-toggle="tab" class="nav-link">' . $CLICSHOPPING_ServerInfo->getDef('tab_info_op_cache'); ?></a></li>
           </ul>
           <div class="tabsClicShopping">
             <div class="tab-content">
@@ -253,7 +253,7 @@
                           <td>
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                               <a class="navbar-brand" href="#">Menu</a>
-                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                               </button>
                               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -340,7 +340,7 @@
             $v = $opCache->getStringFromPropertyAndValue($k, $v);
             $m = $opCache->getSuggestionMessage($k, $v);
 ?>
-                                    <tr class="<?php echo $m ? 'danger' : ''; ?>"><th class="text-md-left"><?php echo $k; ?></th><td class="text-md-right"><?php echo $v; ?></td><td><?php echo $m; ?></td></tr>
+                                    <tr class="<?php echo $m ? 'danger' : ''; ?>"><th class="text-start"><?php echo $k; ?></th><td class="text-end"><?php echo $v; ?></td><td><?php echo $m; ?></td></tr>
 <?php
           }
           continue;
@@ -348,7 +348,7 @@
     $mess = $opCache->getSuggestionMessage($key, $value);
     $value = $opCache->getStringFromPropertyAndValue($key, $value);
 ?>
-                                    <tr class="<?php echo $mess ? 'danger' : ''; ?>"><th class="text-md-left"><?php echo $key; ?></th><td class="text-md-right"><?php echo $value; ?></td><td><?php echo $mess; ?></td></tr>
+                                    <tr class="<?php echo $mess ? 'danger' : ''; ?>"><th class="text-start"><?php echo $key; ?></th><td class="text-end"><?php echo $value; ?></td><td><?php echo $mess; ?></td></tr>
 <?php
       }
 ?>
@@ -367,9 +367,9 @@
       $mess =$opCache-> getSuggestionMessage($key, $value);
 ?>
                                     <tr class="<?php echo $mess ? 'danger' : ''; ?>" >
-                                      <th class="text-md-left"><?php echo $key; ?></th>
-                                      <td class="text-md-right"><?php echo $opCache->getStringFromPropertyAndValue($key, $value); ?></td>
-                                      <td class="text-md-left"><?php echo $mess; ?></td>
+                                      <th class="text-start"><?php echo $key; ?></th>
+                                      <td class="text-end"><?php echo $opCache->getStringFromPropertyAndValue($key, $value); ?></td>
+                                      <td class="text-start"><?php echo $mess; ?></td>
                                     </tr>
  <?php
       }
@@ -401,7 +401,7 @@
             (null === $previousKey) ? $key : $previousKey,
             $key
           ),
-          (null === $offset) ? strlen($key) : $offset
+          (null === $offset) ? \strlen($key) : $offset
         );
         $previousKey = $key;
       }
