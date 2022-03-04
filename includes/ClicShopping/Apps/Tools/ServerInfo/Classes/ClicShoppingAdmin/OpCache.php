@@ -38,7 +38,7 @@
     {
       $i = 0;
 
-      while (strlen($a) && strlen($b) && strlen($a) > $i && $a[$i] === $b[$i]) {
+      while (\strlen($a) && \strlen($b) && \strlen($a) > $i && $a[$i] === $b[$i]) {
         $i++;
       }
 
@@ -54,13 +54,13 @@
     {
       switch ($property) {
         case 'opcache_enabled':
-          return $value ? '' : '<span class="fa fas"></span> You should enabled opcache';
+          return $value ? '' : '<i class="bi bi-search"></i> You should enabled opcache';
           break;
         case 'cache_full':
-          return $value ? '<span class="fa fas-search"></span> You should increase opcache.memory_consumption' : '';
+          return $value ? '<i class="bi bi-search"></i> You should increase opcache.memory_consumption' : '';
           break;
         case 'opcache.validate_timestamps':
-          return $value ? '<span class="fa fas-search"></span> If you are in a production environment you should disabled it' : '';
+          return $value ? '<i class="bi bi-search"></i> If you are in a production environment you should disabled it' : '';
           break;
       }
       return '';
